@@ -1,0 +1,320 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+#nav .navbar,ul,ol,li,a,span,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row{
+    
+   justify-content: center;
+}
+
+/*common class starts here*/
+:root{
+    --primary_color:#02918c;
+    --common_color:#7e8287;
+}
+.heading{
+    text-align: center;
+   
+    margin-top: 70px;
+    margin-bottom: 25px;
+   
+}
+.heading h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--primary_color);
+}
+/*common class ends here*/
+
+/*navbar css task here*/
+#nav .navbar{
+    background-color:var(--primary_color);
+}
+#nav .navbar ul li{
+    padding: 20px 20px;
+}
+#nav .navbar ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+   
+}
+#nav .navbar span{
+    color: #fff;
+}
+
+/*navbar css task ends here*/
+
+/*banner starts here*/
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 720px;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+   
+}
+#banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.34);
+    z-index: -1;
+}
+#banner .row{
+    align-items: center;
+    height: 720px;
+}
+#banner .row .text h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+#banner .row .text h1{
+  font-size:68px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing:20px;
+  
+}
+#banner .row .text p{
+   font-size: 18px;
+   font-weight: 400;
+   color: #fff;
+}
+#banner .row .text .img{
+    padding-top: 20px;
+}
+#banner .row .text a{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cccc33;
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+    border-radius: 2px;
+}
+/*banner ends here*/
+
+/*about section starts here*/
+#about .img{
+    width: 100%;
+    text-align: center
+}
+#about p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--common_color);
+    padding: 0 100px;
+    line-height: 30px;
+}
+#about p span{
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--common_color);
+}
+#about .row .box{
+    margin-top: 65px;
+    margin-bottom: 80px;
+    border-right: 1px solid #cccccc;
+}
+#about .row .box .img{
+    padding-top: 10px;
+}
+#about .row .box h4{
+    font-size: 16px;
+    font-weight:800;
+    color: var(--common_color);
+    padding-top: 25px;
+}
+#about .row .box p{
+    font-size: 11px;
+    color: var(--common_color);
+    line-height: 25px;
+    padding: 25px 30px;
+    margin: 0;
+}
+#about .row .box:last-child{
+    border-right: none;
+}
+
+#services{
+    background-image: url(../images/project-1\(A\)-MYFOLIO-\(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 730px;
+}
+#services .row .heading{
+    text-align: left;
+    margin-top: 65px;
+}
+#services .row .dt_row{
+    margin-top: 50px;
+}
+#services .row .dt_row .dt_div{
+    padding-bottom: 35px;
+}
+#services .row .dt_row .dt_div h4{
+    font-size: 16px;
+    font-weight:800 ;
+    color:var(--common_color);
+    padding-top: 15px;
+}
+
+
+#services .row .dt_row .dt_div p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--common_color);
+    padding-top: 22px;
+    padding-right: 50px;
+    line-height: 23px;
+}
+/*about section ends here*/
+
+/*my work starts here*/
+#my_work .container .hr_img{
+    text-align: center;
+}
+#my_work .container p{
+    font-size: 16px;
+    color: var(--common_color);
+    text-align: center;
+    padding: 25px 210px;
+    line-height: 30px;
+}
+
+.work_img{
+    overflow: hidden;
+}
+.work_img .sub_img img{
+    width: 100%;
+    height: 100%;   
+   
+}
+.work_img .sub_img{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    cursor: pointer;
+   
+    
+}
+.work_img .sub_img .overly{
+    position: absolute;
+    inset: 25px;
+    background-color: rgba(0, 153, 153, .85);
+    opacity: 0;
+    transition: .5s ease-in-out;
+   
+}
+.work_img .sub_img:hover .overly{
+    opacity: 1;
+}
+
+.work_img .sub_img .overly h4{
+    font-size: 16px;
+    font-weight: 800;
+    color:#fff ;
+    padding: 55px 70px 0 70px ;
+    text-align: center;
+}
+
+.work_img .sub_img .overly p{
+    font-size: 13px;
+    color:#fff ;
+    padding:15px 40px ;
+    text-align: center;
+}
+/*my work ends here*/
+
+/*contact starts here*/
+#contact .hr_img{
+    text-align: center;
+}
+#contact .container p{
+    font-size: 16px;
+    color: var(--common_color);
+    text-align: center;
+    padding: 25px 210px;
+    line-height: 30px;
+}
+/*contact ends here*/
+
+/*footer starts*/
+#footer{
+    background-color: #000;
+    height: 550px;
+}
+#footer .container form{
+    padding-top: 50px;
+    text-align: center;
+}
+#footer .container form input{
+    border: none;
+    margin-bottom: 40px;
+    height: 50px;
+    width: 645px;
+    border-bottom: 1px solid var(--common_color);
+    background-color: transparent;
+    color: #fff;
+}
+#footer .container form .message{
+    border: 1px solid var(--common_color);
+    width: 910px;
+    height: 90px;
+    border-left:none;
+    border-right:none;
+}
+#footer .container form p{
+    color: var(--common_color);
+    background: transparent;
+    font-size: 16px;
+}
+#footer .container form ::placeholder{
+    text-align: center;
+    font-size: 16px;
+}
+#footer .container form a{
+    
+    color: violet;
+    width: 200px;
+    padding: 17px 60px;
+    background-color:rgb(192, 183, 183) ;
+}
+#footer .container form a{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cccc33;
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+    border-radius: 2px;
+   
+}
+#footer .container form .href{
+    text-align: center;
+    
+}
+/*footer ends*/
